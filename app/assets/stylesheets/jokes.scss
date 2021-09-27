@@ -1,0 +1,128 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+header{
+    .images-container{
+        max-width: 80%;
+        margin: auto;
+        padding: 0.5rem;
+
+            .userImg{
+                width:50px;
+                height: 50px;
+                border-radius: 50% 50%;
+                margin: 15px 0px;
+            }
+
+    }
+    .header-content{
+        padding: 2.5rem 0rem;
+        background-color: rgb(41,179,99);
+
+        p{
+            font-size:1rem;
+        }
+    }
+
+}
+
+.main-joke{
+    max-width: 60%;
+    margin: auto;
+
+    .joke-content{
+        margin-bottom: 50px;
+    }
+
+    .btn-notfun{
+        background-color: rgb(41,179,99);
+        color:white;
+    }
+
+    .buttons-container{
+        
+        max-width: 50%;
+        margin:auto;
+
+       .buttons{
+           max-width: 100%;
+           display: flex;
+           justify-content: center;
+          
+
+           .btnLike, .btnDislike{
+               display: inline-block;
+               margin: 0px 5px;
+           }
+       }
+       
+    }
+}
+
+footer{
+    padding: 1rem 0px;
+
+    .footer-content{
+        max-width: 70%;
+        font-size: 0.7rem;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+   
+.main-joke{
+    max-width: 90%;
+    margin: auto;
+
+    .joke-content{
+        margin-bottom: 2rem;
+    }
+
+    .buttons-container{
+      
+       .buttons{
+           max-width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+          
+
+           .btnLike, .btnDislike{
+               display: inline-block;
+               margin: 5px 0px;
+           }
+       }
+       
+    }
+}
+   
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+   
+    .main-joke{
+        max-width: 90%;
+        margin: auto;
+    
+        .joke-content{
+            margin-bottom: 2rem;
+        }
+    
+    }
+       
+}
+
+/* Laptop */
+@media screen and (max-width: 1600px) {
+   
+    .main-joke{
+        max-width: 80%;
+        margin: auto;
+    }
+       
+}

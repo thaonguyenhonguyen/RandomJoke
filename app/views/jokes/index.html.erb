@@ -1,0 +1,19 @@
+<div class="card border-0 main-joke">
+  <div class="card-body">
+    <div class="joke-content">
+        <p><%= @random_joke.joke_content %></p>
+    </div>
+
+    <div class="buttons-container border-top p-4">
+      <div class="buttons">
+        <div class="btnLike">
+              <%= button_to "This is Funny!", likes_path, params: { like: { joke_id: @random_joke.id}}, method: :post, class:"btn btn-primary" %>
+       </div>   
+
+       <div class="btnDislike">    
+              <%= button_to "This is not funny.", dislikes_path, params: { dis_like: { joke_id: @random_joke.id}}, method: :post, class:"btn btn-notfun" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

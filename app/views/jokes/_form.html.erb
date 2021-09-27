@@ -1,0 +1,22 @@
+<%= form_with(model: joke) do |form| %>
+  <% if joke.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(joke.errors.count, "error") %> prohibited this joke from being saved:</h2>
+
+      <ul>
+        <% joke.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :joke_content %>
+    <%= form.text_area :joke_content %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
